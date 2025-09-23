@@ -1,17 +1,50 @@
+*{
+  font-family: "SUSE Mono", Helvetica, sans-serif, Arial;
+}
+
+nav {
+   text-align: right;
+   font-size: 18px;
+   font-weight: bold;
+   line-height: 0%;
+}
+
 body {
   background-color: #f4f4f9;
   color: black;
-  font-family: "SUSE Mono", Helvetica, sans-serif, Arial;
+  font-style: normal;
+  font-size: 16px;
+  line-height: normal;
 }
 
 h1 {
   color: black;
+  font-size: 2.5em;
+  text-align: right;
 }
 
 h2 {
   color: #2f4550;
+  font-size: 1.875em;
 }
 
 h3 {
   color: #586f7c;
+  font-size: 18px;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+footer{
+  text-align: center;
+}
+
+footer p {
+  font-size: 13px;
 }
