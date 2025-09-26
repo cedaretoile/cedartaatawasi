@@ -84,10 +84,14 @@ ul li a {
 
 .column {
     float: left;
-    width: 30%;
+    width: 33.3%;
 }
 
-/* Clearfix (clear floats) */
+.row {
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+
 .row::after {
     content: "";
     clear: both;
