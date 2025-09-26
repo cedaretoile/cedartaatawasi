@@ -1,19 +1,9 @@
-*{
-  font-family: "SUSE Mono", Helvetica, sans-serif, Arial;
-  box-sizing: border-box;
-}
-
-nav {
-   text-align: right;
-   font-size: 18px;
-   font-weight: bold;
-   line-height: 0%;
+* {
+    font-family: "Bodoni Moda", serif;
+    box-sizing: border-box;
 }
 
 body {
-  background-image: url(../assets/gradient.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
   color: black;
   font-style: normal;
   font-size: 16px;
@@ -31,31 +21,77 @@ h2 {
   font-size: 1.875em;
 }
 
-h3 {
-  color: #586f7c;
-  font-size: 18px;
-}
-
 a{
   text-decoration: none;
+  color:black;
 }
 
 a:hover{
   text-decoration: underline;
 }
 
-footer{
+ul {
+  font-size: 18px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul li {
+  display: block;
+  text-align: left;
+  padding: auto;
+}
+
+ul li a {
+  display: block;
+  color: black;
   text-align: center;
-  margin: 50px;
+  padding: 14px 16px;
 }
 
-footer p {
-  font-size: 13px;
+.cedartaatawasi {
+  font-size: 100px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-#home-gallery{
+.works-text {
+  font-size: 100px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.services {
+  font-size: 100px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+.lead-photo {
   margin-top: 20px;
-  margin-left: 20px;
+}
+
+.home-intro {
+  font-size: 48px;
+  text-align: center;
+  margin: 100px;
+}
+
+.column {
+    float: left;
+    width: 30%;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .about-section{
@@ -67,14 +103,67 @@ footer p {
 
 .container {
   margin-top: 100px;
+  margin-bottom: 100px;
   padding: 10px;
   max-width: 500px;
   text-align: right;
-  border: 20px solid pink;
+
 }
 .selfie {
   display: inline-block;
   width: 800px;
   height: 500px;
   margin: 0 auto;
+}
+
+.row-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-bottom: 50px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-gallery {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column-gallery img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column-gallery {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column-gallery {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+footer{
+  width: auto;
+  height: 200px;
+  margin: 0px;
+  padding-top: 5px;
+  background-color: #504B43;
+}
+
+footer p {
+  font-size: 64px;
+  text-align: center;
+  color: white;
+
 }
